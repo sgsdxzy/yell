@@ -1,11 +1,12 @@
 Yell - Virtual sound card for Microsoft Windows guest in KVM
---------------------------------------------------------------- Yell is based
-on [Scream](https://github.com/duncanthrax/scream/releases), which is a virtual
-network sound card for Windows. Scream is an excellent way to stream system
-audio from KVM windows guests to linux host, as qemu emulated sound cards do not
-work well in Windows 10, suffering from audio clicking and interrupt problems.
-However, when the guest network is bridged, scream can waste network bandwidth. 
-Besides, scream cannot stream microphone input from host back to guest.
+--------------------------------------------------------------- 
+Yell is based on [Scream](https://github.com/duncanthrax/scream/releases),
+which is a virtual network sound card for Windows. Scream is an excellent way
+to stream system audio from KVM windows guests to linux host, as qemu emulated
+sound cards do not work well in Windows 10, suffering from audio clicking and
+interrupt problems.  However, when the guest network is bridged, scream can
+waste network bandwidth.  Besides, scream cannot stream microphone input from
+host back to guest.
 
 Yell is a virtual sound card working over emulated serial port and unix socket
 to relieve pressure from network stack and provide duplex audio for Windows
